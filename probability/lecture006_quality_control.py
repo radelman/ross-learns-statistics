@@ -92,7 +92,7 @@ def simulate_maximum_likelihood_estimator(
     g_hat = [simulate_maximum_likelihood_estimate(n, k, h) for h in samples]
 
     mean = np.mean(g_hat)
-    std = np.std(g_hat)
+    std = np.std(g_hat) # ddof=1?
 
     if print_results:
         print(mean)
