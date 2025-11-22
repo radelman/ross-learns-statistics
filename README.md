@@ -5,3 +5,6 @@ I'm going to start by following Steve Brunton's boot camps on his YouTube channe
 My plan is to explore the concepts in each lecture in Python.
 I'll post any code here.
 Feel free to clone this repo and play around with the code if you're interested.
+
+Links:
+- https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
