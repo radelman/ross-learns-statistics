@@ -1,6 +1,6 @@
 """https://www.youtube.com/watch?v=b_ev4Hdzh-U&list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V&index=4"""
 
-def main():
+def main() -> None:
     n_flips = 3
 
     Omega = set([""])

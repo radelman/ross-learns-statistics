@@ -1,10 +1,10 @@
 """https://www.youtube.com/watch?v=4T3aOIfNdTY&list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V&index=2"""
 
-def main():
+def main() -> None:
     simulate_coin_flips()
     simulate_dice_rolls()
 
-def simulate_coin_flips():
+def simulate_coin_flips() -> None:
     n_flips = 2
 
     Omega = [""]
@@ -33,7 +33,7 @@ def simulate_coin_flips():
 
     assert P_A + P_B == 1.0
 
-def simulate_dice_rolls():
+def simulate_dice_rolls() -> None:
     n_rolls = 2
 
     Omega = [""]

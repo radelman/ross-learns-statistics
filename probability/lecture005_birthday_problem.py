@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import operator
 import random
 
-def main():
+def main() -> None:
     n = range(1, 50 + 1)
 
     p = [(365 - i + 1) / 365 for i in n]

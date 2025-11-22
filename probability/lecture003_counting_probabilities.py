@@ -3,7 +3,7 @@
 import itertools
 import math
 
-def main():
+def main() -> None:
     # with replacement, order matters
     print(math.prod([52, 52, 52, 52, 52]))
     print(52 ** 5)
