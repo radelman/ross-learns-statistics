@@ -123,7 +123,8 @@ def sample(
     k: int,
 ) -> int:
     """from a population with n objects, g of which are good, randomly select k of them.  return the number of good
-    objects h in this sample"""
+    objects h in this sample
+    """
 
     b = n - g
     objects = g * [True] + b * [False]
