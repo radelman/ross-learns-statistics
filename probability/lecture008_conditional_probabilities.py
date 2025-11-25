@@ -20,9 +20,10 @@ def simulate_dice_rolls() -> None:
 def simulate_card_deals() -> None:
     Omega = set(
         f"{
-            "jack" if x == 11
-            else "queen" if x == 12
+            "ace" if x == 1
             else "king" if x == 13
+            else "queen" if x == 12
+            else "jack" if x == 11
             else x
         } of {y}"
         for x in range(1, 13 + 1)
