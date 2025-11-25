@@ -18,7 +18,7 @@ def simulate_dice_rolls() -> None:
     simulate_A_given_B(Omega, in_A, in_C)
 
 def simulate_card_deals() -> None:
-    Omega = set(
+    Omega = {
         f"{
             "ace" if x == 1
             else "king" if x == 13
@@ -33,7 +33,7 @@ def simulate_card_deals() -> None:
             "hearts (red)",
             "spades (black)",
         ]
-    )
+    }
 
     in_A = lambda omega: "spades" in omega
     in_B = lambda omega: "black" in omega
