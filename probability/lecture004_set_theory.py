@@ -3,14 +3,14 @@
 def main() -> None:
     n_flips = 3
 
-    Omega = set([""])
+    Omega = {""}
     for i in range(n_flips):
-        Omega = set([previous_events + next_event for previous_events in Omega for next_event in ["h", "t"]])
+        Omega = {previous_events + next_event for previous_events in Omega for next_event in ["h", "t"]}
 
     print(f"Omega = {Omega}")
 
-    A = set([events for events in Omega if events[0] == "h"])
-    B = set([events for events in Omega if events[1] == "t"])
+    A = {events for events in Omega if events[0] == "h"}
+    B = {events for events in Omega if events[1] == "t"}
 
     print(f"A = {A}")
     print(f"B = {B}")

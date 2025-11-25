@@ -13,7 +13,7 @@ def main() -> None:
 
     q = []
     for i in n:
-        Omega = [[random.randrange(0, 365) for j in range(i)] for k in range(1000)]
+        Omega = [[random.randrange(365) for j in range(i)] for k in range(1000)]
         A = [omega for omega in Omega if len(set(omega)) < len(omega)]
         P_A = len(A) / len(Omega)
         q.append(P_A)

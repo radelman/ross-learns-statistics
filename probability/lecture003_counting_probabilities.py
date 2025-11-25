@@ -24,10 +24,10 @@ def main() -> None:
 
 def count_via_enumeration(N: int, k: int) -> int:
     event_space = [event for event in range(1, N + 1)]
-    Omega = set([()])
+    Omega = {()}
     for i in range(k):
         Omega = [previous_events + (next_event,) for previous_events in Omega for next_event in event_space]
-        Omega = set([tuple(sorted(events)) for events in Omega])
+        Omega = {tuple(sorted(events)) for events in Omega}
     return len(Omega)
 
 def count_via_recursion(N: int, k: int) -> int:
