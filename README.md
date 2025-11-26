@@ -9,3 +9,4 @@ Feel free to clone this repo and play around with the code if you're interested.
 Links:
 - https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
 - https://math.stackexchange.com/questions/2569145/how-do-i-know-when-to-use-the-law-of-total-probability
+- https://en.wikipedia.org/wiki/Confusion_matrix
