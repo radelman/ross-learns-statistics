@@ -10,3 +10,5 @@ Links:
 - https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
 - https://math.stackexchange.com/questions/2569145/how-do-i-know-when-to-use-the-law-of-total-probability
 - https://en.wikipedia.org/wiki/Confusion_matrix
+- https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation
+- https://en.wikipedia.org/wiki/Principle_of_indifference
