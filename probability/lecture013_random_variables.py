@@ -9,11 +9,10 @@ def main() -> None:
 
     a = -10.0
     b = 20.0
-    x = np.linspace(a, b, 1000, endpoint=True)
-    F = 1.0 / (1.0 + np.exp(-k * (x - x0)))
-    f = np.diff(F) / np.diff(x)
-    x = x[:-1]
-    F = F[:-1]
+    x = np.linspace(a, b, 1000)
+    e = np.exp(-k * (x - x0))
+    F = 1.0 / (1.0 + e)
+    f = (k * e) / ((1.0 + e) ** 2) # f(x) = F'(x)
 
     num_samples = 1000
     u = np.random.random(num_samples)
@@ -21,8 +20,8 @@ def main() -> None:
 
     fig = plt.figure()
     ax = fig.gca()
-    ax.hist(y, bins=np.linspace(a, b, 100), density=True, label=f"P(X = x) (Numerical, {num_samples} Samples)")
-    ax.plot(x, f, label="P(X = x) (Semi-Analytical)")
+    ax.hist(y, bins=np.linspace(a, b, 100), density=True, label=f"P(X = x) (Histogram of {num_samples} Samples)")
+    ax.plot(x, f, label="P(X = x) (Analytical)")
     ax.plot(x, F, label="P(X <= x) (Analytical)")
     ax.set_title("Logistic Distribution")
     ax.set_xlabel("x")
