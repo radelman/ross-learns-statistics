@@ -15,7 +15,7 @@ def main() -> None:
     plot_binomial_distribution(30, 0.9)
     plot_binomial_distribution(30, 0.99)
 
-    # the distribution also gets more narrow relative to n as n increases
+    # the distribution also gets more narrow as n increases
     plot_binomial_distribution(10, 0.5)
     plot_binomial_distribution(30, 0.5)
     plot_binomial_distribution(100, 0.5)
