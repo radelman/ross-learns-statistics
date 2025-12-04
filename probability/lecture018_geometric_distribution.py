@@ -15,7 +15,7 @@ def main() -> None:
 
 def plot_geometric_distribution(p: float, n: int, num_samples: int) -> None:
     k = np.arange(1, n + 1)
-    f = (1.0 - p) ** (k - 1) * p
+    f = ((1.0 - p) ** (k - 1)) * p
 
     # in a sample of n trials, it's possible that none succeeded.  in this case, the first success would've happened
     # on or after the (n + 1)th trial.  label these samples as such
